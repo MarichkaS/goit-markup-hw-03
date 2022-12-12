@@ -12,7 +12,6 @@
 
     --primary-font: Roboto, sans-serif;
     --logo-font: Raleway, sans-serif;
-
 }
 
 heml {
@@ -48,9 +47,8 @@ body {
 
 .container {
     width: 1158px;
-    /* padding-right: 15px ;
-    padding-left: 15px; */
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 15px;
     margin-top: none;
     
     outline: 2px solid black
@@ -165,7 +163,6 @@ body {
     height: 603px;
 }
 
-
 .hero-title {
     margin-bottom: 48px;
     
@@ -234,9 +231,6 @@ body {
     display: flex;
     margin-bottom: 120px;
 }
-.feature-list .item {
-    /* width: 264px; */
-}
 
 .feature-list .item:not(:last-child){
     margin-right: 24px;
@@ -264,7 +258,7 @@ img {
 
 .images-list {
     display: flex;
-    /* margin-bottom: 120px; */
+    margin-bottom: 120px;
 }
 
 .images-list .item:not(:last-child) {
@@ -283,7 +277,6 @@ img {
 
 /* h2 gray-section */
 .gray-section .title {
-    margin-top: 0;
     margin-bottom: 72px;
     
     color: var(--dark-color);
@@ -297,7 +290,6 @@ img {
 
 /* h3  gray-section*/
 .gray-section .secondary {
-    margin-top: 0;
     margin-bottom: 8px;
     
     color: var(--dark-color);
@@ -390,10 +382,6 @@ footer {
     justify-content: center;
     padding-top: 96px;
     margin-bottom: 72px;
-    background-color: red;
-
-    /* background-color: red; */
-
 }
 
 .filter .button:not(:last-child){
@@ -418,19 +406,22 @@ footer {
 
 /* Projects */
 
-.projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 360px;
-}
-
-.projects-list .list {
-    margin-right: 24px;
-    margin-bottom: 48px;
-}
-
 .img-projects {
     margin-bottom: 32px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 120px;
+}
+
+.projects-list .list:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.projects-list .list:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 48px;
 }
 
 
