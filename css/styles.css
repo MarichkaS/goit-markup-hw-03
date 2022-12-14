@@ -161,7 +161,7 @@ header {
 .hero {
     padding-top: 192px;
     padding-bottom: 192px;
-    margin-bottom: 120px;
+;
     
     background: var(--dark-color);
     text-align: center;
@@ -236,7 +236,12 @@ header {
 
 .feature-list {
     display: flex;
-    margin-bottom: 120px;
+    border-top: 120px;
+}
+
+.second-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .feature-list .item{
@@ -269,7 +274,10 @@ img {
 
 .images-list {
     display: flex;
-    margin-bottom: 120px;
+}
+
+.technologies{
+    padding-bottom: 120px;
 }
 
 .images-list .item:not(:last-child) {
@@ -280,7 +288,7 @@ img {
 
 .gray-section {
     background-color: var(--light-color);
-    height: min-content 732px;
+    /* height: min-content 732px; */
     padding-top: 120px;
     padding-bottom: 120px
     ;
@@ -311,17 +319,20 @@ img {
 }
 
 /* p gray-section */
-.gray-section .text {
-    margin-bottom:32px;
-    
+.gray-section .text {   
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.img-team {
+/* .img-team {
     margin-bottom: 32px;
+} */
+
+.team{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-list {
@@ -345,11 +356,10 @@ footer {
     display: flex;
     align-items:center;
     
-    /* height: 310px; */
     background-color: var(--dark-color);
 }
 
-.footer{
+footer{
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -404,8 +414,12 @@ footer {
 .filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 72px;
+}
+
+.section-portfolio {
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 120px; 
 }
 
 .filter .button:not(:last-child){
@@ -415,8 +429,6 @@ footer {
 .filter-button {
     padding: 12px 24px;
     border: none;
-    /* border: 1px solid #E7E9FC;
-    border-radius: 4px; */
 
     background-color: var(--light-color);
     color: var(--primary-brand);
@@ -447,22 +459,14 @@ footer {
     margin-bottom: 32px;
 }
 
-/* p */
-.projects-text {
-    margin-bottom: 32px;
-    margin-left: 16px;
-}
-
-/* h3 */
-.projects-title{
-    margin-left: 16px;
-}
-
-
 .projects-list {
     display: flex;
     flex-wrap: wrap; 
-    margin-bottom: 120px;
+}
+
+.projects-text{
+    padding-left: 16px;
+    padding-bottom: 32px;
 }
 
 .projects-list .list{
